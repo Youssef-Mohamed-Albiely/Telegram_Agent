@@ -1,4 +1,4 @@
-# 🤖 Youssef_Assist — Telegram AI Agent
+# 🤖 Mohamed_Assist — Telegram AI Agent
 
 A production-ready conversational AI Agent for Telegram, built with **FastAPI**, **LangChain**, and **Groq LPU** for blazing-fast inference. Features per-user session management, summarization-based long-term memory, and agentic tool-use.
 

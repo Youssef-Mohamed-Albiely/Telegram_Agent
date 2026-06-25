@@ -1,4 +1,4 @@
-# Contributing to Youssef_Assist
+# Contributing to Mohamed_Assist
 
 Thanks for your interest in contributing! Here's how to get started.
 
