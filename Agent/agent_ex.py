@@ -74,7 +74,10 @@ prompt_template = cpt.from_messages([
     hmpt.from_template("{input}"),
     ("placeholder", "{agent_scratchpad}")
 ])
-pipeline = prompt_template | llm
+
+stroutput = StrOutputParser()
+
+pipeline = prompt_template | llm | stroutput
 
 toolbox = load_tools(tool_names=['serpapi'], llm=llm) + all_tools
 
@@ -92,7 +95,6 @@ while session_id in chat_map:
 
 print(f"your session id is: {session_id}\nDon't forget him")
 
-stroutput = StrOutputParser()
 
 def get_session_history(session_id , k , llm) -> memory :
     if session_id not in chat_map:
